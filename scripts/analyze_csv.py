@@ -1,8 +1,8 @@
 # scripts/analyze_csv.py
 import pandas as pd, json, hashlib, sys
-from chanlab.structs import Bar
-from chanlab.rules import resolve_inclusions, detect_fractals
-from chanlab.engine import build_bi, build_zhongshu
+from chanlab.chanlab_core.structs import Bar
+from chanlab.chanlab_core.rules import resolve_inclusions, detect_fractals
+from chanlab.chanlab_core.engine import build_bi, build_zhongshu
 
 def load_csv(path):
     df = pd.read_csv(path)

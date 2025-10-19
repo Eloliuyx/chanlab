@@ -1,9 +1,9 @@
 import pandas as pd
 import numpy as np
-from chanlab.structs import Bar
-from chanlab.rules import resolve_inclusions, detect_fractals
-from chanlab.engine import build_bi, build_zhongshu
-from chanlab.signals import generate_signals
+from chanlab.chanlab_core.structs import Bar
+from chanlab.chanlab_core.rules import resolve_inclusions, detect_fractals
+from chanlab.chanlab_core.engine import build_bi, build_zhongshu
+from chanlab.chanlab_core.signals import generate_signals
 
 FEE = 0.0005   # commission+stamp duty approx (toy)
 SLIP = 0.0005  # slippage (toy)

@@ -4,9 +4,9 @@ import sys, json, hashlib, os
 import pandas as pd
 from datetime import datetime, date
 from pathlib import Path
-from chanlab.structs import Bar
-from chanlab.rules import resolve_inclusions, detect_fractals
-from chanlab.engine import build_bi, build_zhongshu
+from chanlab.chanlab_core.structs import Bar
+from chanlab.chanlab_core.rules import resolve_inclusions, detect_fractals
+from chanlab.chanlab_core.engine import build_bi, build_zhongshu
 
 # ---------- helpers ----------
 CN2EN = {
